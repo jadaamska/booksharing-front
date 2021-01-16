@@ -14,7 +14,7 @@ class MyMap extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { center: [0, 0], zoom: 5 };
+    this.state = { center: [0, 0], zoom: 2 };
 
     this.map = new Map({
       target: null,
@@ -36,6 +36,7 @@ class MyMap extends React.Component {
   componentDidMount() {
     this.map.setTarget("map"); 
   }
+
 
   render() {
     return (
